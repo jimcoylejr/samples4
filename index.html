@@ -2,102 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio: Jim Coyle</title>
   <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      background-color: #ffffff;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 16px;
+      font-size: 18px;
       line-height: 1.7;
-      color: #222222;
-      max-width: 760px;
-      margin: 60px auto;
-      padding: 0 24px 60px 24px;
+      color: #222;
+      background: #fff;
+      padding: 48px 24px 80px;
     }
 
+    /* ── Layout ── */
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* ── Heading ── */
     h1 {
-      font-size: 26px;
+      font-size: 2rem;
       font-weight: bold;
-      margin-bottom: 36px;
-      border-bottom: 1px solid #cccccc;
+      margin-bottom: 40px;
+      border-bottom: 2px solid #222;
       padding-bottom: 12px;
     }
 
+    /* ── Sample sections ── */
+    .sample {
+      margin-bottom: 48px;
+    }
+
     h2 {
-      font-size: 18px;
+      font-size: 1.25rem;
       font-weight: bold;
-      margin-top: 36px;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
 
     p {
-      margin: 0 0 10px 0;
+      margin-bottom: 12px;
     }
 
+    em {
+      font-style: italic;
+    }
+
+    /* ── Links ── */
     a {
       color: #1a0dab;
       text-decoration: underline;
     }
 
     a:hover {
-      color: #c00000;
+      color: #888;
     }
 
-    .sample {
-      margin-bottom: 36px;
-      padding-bottom: 36px;
-      border-bottom: 1px solid #eeeeee;
+    .link-list {
+      list-style: none;
+      margin-top: 4px;
     }
 
-    .sample:last-child {
-      border-bottom: none;
-    }
-
-    .link-line {
-      margin-top: 10px;
+    .link-list li {
+      margin-bottom: 4px;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Portfolio: Jim Coyle</h1>
 
-  <h1>Portfolio: Jim Coyle</h1>
+    <!-- Sample 1 -->
+    <div class="sample">
+      <h2>Sample 1: Electronic Medical Record System Demonstration and Test</h2>
+      <p>I've spent much of my career consulting with healthcare organizations to drive user adoption of Electronic Medical Record systems, chiefly Cerner and Epic. This sample is from a Cerner course for anesthetists. It's a software simulation.</p>
+      <ul class="link-list">
+        <li><a href="https://jimcoylejr.github.io/clinicaldemo05/">View Demonstration</a></li>
+        <li><a href="https://jimcoylejr.github.io/clinicaltest_01/">View Test</a></li>
+      </ul>
+    </div>
 
-  <div class="sample">
-    <h2>Sample 1: Electronic Medical Record System Demonstration and Test</h2>
-    <p>I've spent much of my career consulting with healthcare organizations to drive user adoption of Electronic Medical Record systems, chiefly Cerner and Epic. This sample is from a Cerner course for anesthetists. It's a software simulation.</p>
-    <p class="link-line"><a href="https://jimcoylejr.github.io/clinicaldemo05/" target="_blank" rel="noopener noreferrer">View Demonstration</a></p>
-    <p class="link-line"><a href="https://jimcoylejr.github.io/clinicaltest_01/" target="_blank" rel="noopener noreferrer">View Test</a></p>
+    <!-- Sample 2 -->
+    <div class="sample">
+      <h2>Sample 2: Microlearning for Organizational Change</h2>
+      <p>I recently worked with a healthcare organization adopting ServiceNow enterprise software. I consulted with a member of the cybersecurity team and worked with a media developer to create this microvideo on a key user screen.</p>
+      <ul class="link-list">
+        <li><a href="https://jimcoylejr.github.io/microvideo_01/">View Video</a></li>
+      </ul>
+    </div>
+
+    <!-- Sample 3 -->
+    <div class="sample">
+      <h2>Sample 3: Change Management Blog Post</h2>
+      <p>I have supported many healthcare organizations during enterprise technology implementations, usually through creating pre-event training content. I started a blog in 2026 exploring methods to improve communication during go-live (among other topics).</p>
+      <ul class="link-list">
+        <li><a href="https://jimcoylejr.substack.com/p/sign-of-the-times">View Blog Post</a></li>
+      </ul>
+    </div>
+
+    <!-- Sample 4 -->
+    <div class="sample">
+      <h2>Sample 4: Video for Pharmaceutical Company</h2>
+      <p>In 2010 I worked on a team developing a course for a large pharmaceutical company. The course provided instruction to account managers working with healthcare organizations to improve chronic care management. My main contribution was to script several short videos showing how an account manager should conduct conversations with healthcare customers. To write the script, I met with senior-level account managers and co-created a narrative with them. I'm sharing the first video in the series.</p>
+      <p><em>Note: After pressing Play, you may need to unmute the audio.</em></p>
+      <ul class="link-list">
+        <li><a href="https://vimeo.com/1163404875?share=copy&fl=sv&fe=ci">View Video</a></li>
+      </ul>
+    </div>
+
+    <!-- Sample 5 -->
+    <div class="sample">
+      <h2>Sample 5: Software Marketing Video</h2>
+      <p>During my time at InfoLogix, I worked with a talented video developer to create a marketing video for InfoLogix software that tracks an enterprise's mobile devices. I collaborated with the software developers to write the script and moved the video through reviews with senior management.</p>
+      <p>While this video is more about marketing than instruction, I'm sharing it to illustrate my ability to create video where narration closely meshes with visual content, limiting cognitive load and generally making things easy for the viewer.</p>
+      <p><em>Note: After pressing Play, you may need to unmute the audio.</em></p>
+      <ul class="link-list">
+        <li><a href="https://vimeo.com/1163403263?share=copy&fl=sv&fe=ci">View Video</a></li>
+      </ul>
+    </div>
+
   </div>
-
-  <div class="sample">
-    <h2>Sample 2: Microlearning for Organizational Change</h2>
-    <p>I recently worked with a healthcare organization adopting ServiceNow enterprise software. I consulted with a member of the cybersecurity team and worked with a media developer to create this microvideo on a key user screen.</p>
-    <p class="link-line"><a href="https://jimcoylejr.github.io/microvideo_01/" target="_blank" rel="noopener noreferrer">View Video</a></p>
-  </div>
-
-  <div class="sample">
-    <h2>Sample 3: Chinese Culture Game for Travelers</h2>
-    <p>In an effort to win a U.S. government contract, some friends and I created a prototype module of a game teaching some finer points of Chinese culture. The game puts the learner in various business and social situations on a trip to China. As you will see, much of the knowledge imparted comes via feedback statements; it's an inversion of the usual "Tell and Test" method commonly seen in e-learning. I co-designed the format and wrote the questions and feedback statements.</p>
-    <p>Because the game was built with the now-defunct Adobe Flash, I cannot share the game itself, but I am able to share a walkthrough video recorded before Flash was discontinued.</p>
-    <p><em>Note: After pressing Play, you may need to turn on the audio.</em></p>
-    <p class="link-line"><a href="https://vimeo.com/manage/videos/1162869718" target="_blank" rel="noopener noreferrer">View Walkthrough Video</a></p>
-  </div>
-
-  <div class="sample">
-    <h2>Sample 4: Video for Pharmaceutical Company</h2>
-    <p>In 2010 I worked on a team developing a course for a large pharmaceutical company. The course provided instruction to account managers working with healthcare organizations to improve chronic care management. My main contribution was to script several short videos showing how an account manager should conduct conversations with healthcare customers. To write the script, I met with senior-level account managers and co-created a narrative with them. I'm sharing the first video in the series.</p>
-    <p><em>Note: After pressing Play, you may need to turn on the audio.</em></p>
-    <p class="link-line"><a href="https://vimeo.com/1163404875?share=copy&fl=sv&fe=ci" target="_blank" rel="noopener noreferrer">View Video</a></p>
-  </div>
-
-  <div class="sample">
-    <h2>Sample 5: Software Marketing Video</h2>
-    <p>During my time at InfoLogix, I worked with a talented video developer to create a marketing video for InfoLogix software that tracks an enterprise's mobile devices. I collaborated with the software developers to write the script and moved the video through reviews with senior management.</p>
-    <p>While this video is more about marketing than instruction, I'm sharing it to illustrate my ability to create video where narration closely meshes with visual content, limiting cognitive load and generally making things easy for the viewer.</p>
-    <p><em>Note: After pressing Play, you may need to turn on the audio.</em></p>
-    <p class="link-line"><a href="https://vimeo.com/1163403263?share=copy&fl=sv&fe=ci" target="_blank" rel="noopener noreferrer">View Video</a></p>
-  </div>
-
 </body>
 </html>
